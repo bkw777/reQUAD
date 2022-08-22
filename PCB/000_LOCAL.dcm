@@ -1,0 +1,87 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP 628128_TSOP32
+D 128K x 8 High-Speed CMOS Static RAM, 55/70ns, TSOP-I-32
+K RAM SRAM CMOS MEMORY
+F http://www.futurlec.com/Datasheet/Memory/628128.pdf
+$ENDCMP
+#
+$CMP 7402
+D quad 2-input NOR gate
+K TTL Nor2
+F http://www.ti.com/lit/gpn/sn74ls02
+$ENDCMP
+#
+$CMP 74573
+D 8-bit Latch 3-state outputs
+K TTL DFF DFF8 LATCH 3State
+F 74xx/74hc573.pdf
+$ENDCMP
+#
+$CMP 7474
+D Dual D Flip-flop, Set & Reset
+K TTL DFF
+F 74xx/74hc_hct74.pdf
+$ENDCMP
+#
+$CMP 74AUC2G79
+D Dual D Flip-Flop, Low-Voltage CMOS
+K Dual D Flip-Flop D CMOS
+F http://www.ti.com/lit/sg/scyt129e/scyt129e.pdf
+$ENDCMP
+#
+$CMP 74HC14
+D Hex inverter schmitt trigger
+K HCMOS not inverter
+F http://www.ti.com/lit/gpn/sn74HC14
+$ENDCMP
+#
+$CMP 74LS14
+D Hex inverter schmitt trigger
+K TTL not inverter
+F http://www.ti.com/lit/gpn/sn74LS14
+$ENDCMP
+#
+$CMP 74LVC2G14
+D Dual NOT Gate Schmitt Triggered, Low-Voltage CMOS
+K Dual Gate NOT Schmitt LVC CMOS
+F https://www.ti.com/lit/ds/symlink/sn74lvc2g14.pdf
+$ENDCMP
+#
+$CMP 74LVC2G79
+D Dual D Flip-Flop, Low-Voltage CMOS
+K Dual D Flip-Flop D CMOS
+F http://www.ti.com/lit/sg/scyt129e/scyt129e.pdf
+$ENDCMP
+#
+$CMP BAV70
+D Dual 100V 215mA high-speed switching diodes, common cathode, SOT-23
+K diode
+F https://assets.nexperia.com/documents/data-sheet/BAV70_SER.pdf
+$ENDCMP
+#
+$CMP BAV70S
+D 100V 250mA high-speed switching diodes, dual common cathode, SOT-363
+K diode
+F https://assets.nexperia.com/documents/data-sheet/BAV70_SER.pdf
+$ENDCMP
+#
+$CMP C_Small
+D Unpolarized capacitor, small symbol
+K capacitor cap
+F ~
+$ENDCMP
+#
+$CMP Model_100_System_BUS
+D 8-bit N-channel Microprocessor, DIP-40
+K cpu mpu microprocessor
+F http://datasheets.chipdb.org/Intel/MCS-80/intel-8080.pdf
+$ENDCMP
+#
+$CMP R_Small
+D Resistor, small symbol
+K R resistor
+F ~
+$ENDCMP
+#
+#End Doc Library
