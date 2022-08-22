@@ -14,7 +14,7 @@ This design uses a non-set/reset flipflop, no power-on-reset resistor-cap circui
 Aside from that, this PCB is drawn new from scratch, and the components are different versions & packages.
 
 ## Building
-PCB from [OSHPark](https://oshpark.com/shared_projects/49tenHpL) or [PCBWAY](https://www.pcbway.com/project/shareproject/reQUAD_RAM_Expansion_for_TRS_80_Model_100_8690cd19.html)  
+PCB from [OSHPark](https://oshpark.com/shared_projects/KVu4cEJX) or [PCBWAY](https://www.pcbway.com/project/shareproject/reQUAD_RAM_Expansion_for_TRS_80_Model_100_8690cd19.html)  
 [BOM](https://www.digikey.com/short/m5tj4941)
 
 The chip legs are all tiny, but all parts can be soldered manually using the drag technique.
