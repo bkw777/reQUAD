@@ -94,8 +94,6 @@
         "zone_has_empty_net": "error",
         "zones_intersect": "error"
       },
-      "rule_severitieslegacy_courtyards_overlap": true,
-      "rule_severitieslegacy_no_courtyard_defined": false,
       "rules": {
         "allow_blind_buried_vias": false,
         "allow_microvias": false,
@@ -338,7 +336,7 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "reQUAD_006.kicad_pro",
+    "filename": "reQUAD_007.kicad_pro",
     "version": 1
   },
   "net_settings": {
@@ -417,7 +415,7 @@
   },
   "sheets": [
     [
-      "5898f1d1-eaf7-4ebc-aeb2-c5d36a4d6b72",
+      "f729a0cd-a5a0-4d87-9f43-0f7c37bab62e",
       ""
     ]
   ],
