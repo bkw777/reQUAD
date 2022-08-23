@@ -94,8 +94,6 @@
         "zone_has_empty_net": "error",
         "zones_intersect": "error"
       },
-      "rule_severitieslegacy_courtyards_overlap": true,
-      "rule_severitieslegacy_no_courtyard_defined": false,
       "rules": {
         "allow_blind_buried_vias": false,
         "allow_microvias": false,
@@ -337,7 +335,7 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "reQUAD_001.kicad_pro",
+    "filename": "reQUAD_002.kicad_pro",
     "version": 1
   },
   "net_settings": {
@@ -398,6 +396,15 @@
       "version": 1
     },
     "net_format_name": "",
+    "ngspice": {
+      "fix_include_paths": true,
+      "fix_passive_vals": false,
+      "meta": {
+        "version": 0
+      },
+      "model_mode": 0,
+      "workbook_filename": ""
+    },
     "page_layout_descr_file": "",
     "plot_directory": "",
     "spice_adjust_passive_values": false,
@@ -407,7 +414,7 @@
   },
   "sheets": [
     [
-      "abce5073-3220-488a-bcf7-8707fa3e4293",
+      "23a06ff9-8bda-4fc9-af85-190f86e9c643",
       ""
     ]
   ],
