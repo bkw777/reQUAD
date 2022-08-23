@@ -3114,7 +3114,7 @@
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-00006069ddac)
     (property "Reference" "D1" (id 0) (at 124.46 142.748 0))
-    (property "Value" "BAV70" (id 1) (at 121.92 137.414 0))
+    (property "Value" "BAV70S" (id 1) (at 121.92 137.414 0))
     (property "Footprint" "000_LOCAL:SOT-363_symmetric" (id 2) (at 121.92 139.7 0)
       (effects (font (size 1.27 1.27)) hide)
     )
@@ -3133,7 +3133,7 @@
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-00006069ef3f)
     (property "Reference" "D1" (id 0) (at 124.46 132.588 0))
-    (property "Value" "BAV70" (id 1) (at 121.92 127.254 0))
+    (property "Value" "BAV70S" (id 1) (at 121.92 127.254 0))
     (property "Footprint" "000_LOCAL:SOT-363_symmetric" (id 2) (at 121.92 129.54 0)
       (effects (font (size 1.27 1.27)) hide)
     )
@@ -3346,10 +3346,10 @@
       (reference "C1") (unit 1) (value "1uF") (footprint "000_LOCAL:C_0805")
     )
     (path "/00000000-0000-0000-0000-00006069ddac"
-      (reference "D1") (unit 1) (value "BAV70") (footprint "000_LOCAL:SOT-363_symmetric")
+      (reference "D1") (unit 1) (value "BAV70S") (footprint "000_LOCAL:SOT-363_symmetric")
     )
     (path "/00000000-0000-0000-0000-00006069ef3f"
-      (reference "D1") (unit 2) (value "BAV70") (footprint "000_LOCAL:SOT-363_symmetric")
+      (reference "D1") (unit 2) (value "BAV70S") (footprint "000_LOCAL:SOT-363_symmetric")
     )
     (path "/00000000-0000-0000-0000-00006046df33"
       (reference "J1") (unit 1) (value "Model_100_System_BUS") (footprint "000_LOCAL:DIP-40_pins")
