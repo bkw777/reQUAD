@@ -7,23 +7,19 @@
 This is a derivative of [QUAD](http://bitchin100.com/wiki/index.php?title=QUAD) by Steve Adolph.
 
 ## Differences from the original
-The original design uses a set/reset flipflop with a capacitor-resistor-diode power-on-reset circuit, which Steve says doesn't always reset properly.
+Original has resettable flipflop, powered from vcc (loses power), with resistor-cap power-on-reset  
+This has plain flipflop, powered from vmem (always powered), no resistor-cap power-on-reset
 
-This design uses a non-reset flipflop, no power-on-reset resistor-cap circuit, and is instead simply powered at all times along with the ram.
+Original disables internal ram by holding RAMRST high, which disables /OE on the internal ram
+This disables internal ram by holding (A)* low, which disables CE on the internal ram (Steve's idea)
 
 Aside from that, this PCB is drawn new from scratch, and the components are different versions & packages.
 
 ## Building
-PCB from [OSHPark](https://oshpark.com/shared_projects/EzqwlTVX) or [PCBWAY](https://www.pcbway.com/project/shareproject/reQUAD_RAM_Expansion_for_TRS_80_Model_100_8690cd19.html)  
-[BOM](https://www.digikey.com/short/m5tj4941)
+<!-- PCB from [OSHPark](https://oshpark.com/shared_projects/EzqwlTVX) or [PCBWAY](https://www.pcbway.com/project/shareproject/reQUAD_RAM_Expansion_for_TRS_80_Model_100_8690cd19.html)   -->
+[BOM](https://www.digikey.com/short/m5tj4941) (temporary bom link, need to add a 0805 resistor, value TBD, probably very low, may even replace with a trace)
 
-The component legs are all tiny, but all parts can be soldered manually using the drag technique.
-
-To solder the main PCB DIP legs, put some tacky flux on all the holes and insert all the pins,  
-then put the the whole thing into a breadboard or a socket,  
-then solder two opposite corner pins from the top, then all the rest.
-
-## Using
+## Usage
 Use the software & directions for the original [QUAD](http://bitchin100.com/wiki/index.php?title=QUAD)
 
 ## Thanks
