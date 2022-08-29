@@ -49,7 +49,9 @@
         }
       },
       "diff_pair_dimensions": [],
-      "drc_exclusions": [],
+      "drc_exclusions": [
+        "copper_edge_clearance|125235000|104445000|937f1743-22c7-4f0b-bccd-a1bbcb5ab004|5e3a169e-875b-430a-858e-ae4c36aefbf7"
+      ],
       "meta": {
         "filename": "board_design_settings.json",
         "version": 2
@@ -338,7 +340,7 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "reQUAD_006.kicad_pro",
+    "filename": "reQUAD.kicad_pro",
     "version": 1
   },
   "net_settings": {
