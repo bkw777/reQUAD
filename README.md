@@ -7,12 +7,12 @@
 This is a derivative of [QUAD](http://bitchin100.com/wiki/index.php?title=QUAD) by Steve Adolph.
 
 ## Differences from the original
-Removed the resistor-cap power-on-reset for the flipflop, logic powered at all times along with the ram.
+Removed the resistor-cap power-on-reset. The bank-selection logic is powered at all times by VMEM along with the ram.
 
-Aside from that, this PCB is drawn new from scratch, and the components are different versions & packages.
+New PCB design.
 
-## Building
-PCB from [OSHPark](https://oshpark.com/shared_projects/MzAUrvu4) or [PCBWAY](https://www.pcbway.com/project/shareproject/reQUAD_RAM_Expansion_for_TRS_80_Model_100_8690cd19.html)  
+## Build it
+PCB from [OSHPark](https://oshpark.com/shared_projects/kmJ52kFx) or [PCBWAY](https://www.pcbway.com/project/shareproject/reQUAD_RAM_Expansion_for_TRS_80_Model_100_8690cd19.html)  
 [BOM](https://www.digikey.com/short/mt3jtw7q)
 
 Note for PCBWAY: change "Min Track/Spacing:" to "6/6mil"  
