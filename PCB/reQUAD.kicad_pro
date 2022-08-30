@@ -50,7 +50,7 @@
       },
       "diff_pair_dimensions": [],
       "drc_exclusions": [
-        "copper_edge_clearance|125235000|104445000|937f1743-22c7-4f0b-bccd-a1bbcb5ab004|5e3a169e-875b-430a-858e-ae4c36aefbf7"
+        "copper_edge_clearance|125235000|104445000|b5e93d42-6544-4313-b0cb-779d872cdfa0|796d7e23-4266-4a3e-83c6-9271c4024c5f"
       ],
       "meta": {
         "filename": "board_design_settings.json",
@@ -96,8 +96,6 @@
         "zone_has_empty_net": "error",
         "zones_intersect": "error"
       },
-      "rule_severitieslegacy_courtyards_overlap": true,
-      "rule_severitieslegacy_no_courtyard_defined": false,
       "rules": {
         "allow_blind_buried_vias": false,
         "allow_microvias": false,
@@ -411,7 +409,7 @@
       "workbook_filename": ""
     },
     "page_layout_descr_file": "",
-    "plot_directory": "",
+    "plot_directory": "/home/bkw/src/reQUAD/PCB/",
     "spice_adjust_passive_values": false,
     "spice_external_command": "spice \"%I\"",
     "subpart_first_id": 65,
@@ -419,7 +417,7 @@
   },
   "sheets": [
     [
-      "5898f1d1-eaf7-4ebc-aeb2-c5d36a4d6b72",
+      "28a4b045-d480-4410-adb7-fa6b33984079",
       ""
     ]
   ],
