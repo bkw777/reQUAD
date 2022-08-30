@@ -23,5 +23,8 @@ There are actually no traces or spaces under 6 mils on the board, so just manual
 ## Usage
 Use the software & directions for the original [QUAD](http://bitchin100.com/wiki/index.php?title=QUAD)
 
+Note, this version of the device will select an unpredictable random bank on the first power-on after installing.  
+Don't assume you are in bank #0 until after you use either the simple bank-switch program or 0QUAD to explicitly switch to a bank the first time.
+
 ## Thanks
 Steve Adolph for sharing his original design and allowing this derivative.
