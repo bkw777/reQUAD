@@ -33,8 +33,8 @@ At it's most BASIC (pun intended), switch banks by typing ```OUT 128,n``` in BAS
 Then press the reset button on the back of the machine, or you may do a full cold-reset (ctrl-break-reset) if you want to wipe the current bank.  
 Don't power-cycle, as that will switch you back to bank 1, or possibly a random bank.
 
-The OUT command only performs the hardware/electrical switch, and the reset button restarts the software in the new ram environment.  
-You should always press the reset button immediately after the OUT command, even if the OUT command didn't appear to have any effect or appear to cause any errors, because the system is in an inconsisntent insane state after the hardware switch until the software is restarted.  
+The OUT command only performs the hardware/electrical switch, and the reset button restarts the main rom in the new ram environment.  
+You should always press the reset button immediately after the OUT command, even if the OUT command didn't appear to have any effect or appear to cause any errors, because the system is in an inconsisntent insane state after the hardware switch until the main rom is restarted.  
 
 Because of this, this low level method should only be used as part of the one-time initial setup or as a last resort or other special cases.  
 
