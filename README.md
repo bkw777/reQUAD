@@ -1,8 +1,8 @@
 # reQUAD
 ![](../../raw/main/PCB/reQUAD.jpg)
 ![](../../raw/main/PCB/reQUAD_top.jpg)
-![](../../raw/main/PCB/PCB/reQUAD_bottom.jpg)
-![](../../raw/main/PCB/PCB/reQUAD.svg)
+![](../../raw/main/PCB/reQUAD_bottom.jpg)
+![](../../raw/main/PCB/reQUAD.svg)
 
 ## About
 This is a derivative of [QUAD](http://bitchin100.com/wiki/index.php?title=QUAD) by Steve Adolph.
