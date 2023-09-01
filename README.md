@@ -21,26 +21,33 @@ PCB [PCBWAY](https://www.pcbway.com/project/shareproject/reQUAD_RAM_Expansion_fo
 BOM [DigiKey](https://www.digikey.com/short/vjmw4r5c)
 
 ## To Use it
-At it's most BASIC (pun intended), switch banks by typing ```OUT 128,n``` in BASIC, where n is the desired bank number from 0 to 3, and then press the reset button on the back of the machine, but do NOT power-cycle.
+At it's most BASIC (pun intended), the actual low level actions are: switch banks by typing `OUT 128,n` in BASIC, where n is the desired bank number from 0 to 3, and then press the reset button on the back of the machine, but do NOT power-cycle.  
 
-```OUT 128,0``` switches to bank 1  
-```OUT 128,1``` switches to bank 2  
-```OUT 128,2``` switches to bank 3  
-```OUT 128,3``` switches to bank 4  
+The normal more convenient way to use it is to install the 0QUAD util.
 
-Then press the reset button on the back of the machine, or you may do a full cold-reset (ctrl-break-reset) if you want to wipe the current bank.  
-Don't power-cycle, as that will switch you back to bank 1, or possibly a random bank.
+More detail:
 
-The OUT command only performs the hardware/electrical switch, and the reset button restarts the main rom in the new ram environment.  
-You should always press the reset button immediately after the OUT command, even if the OUT command didn't appear to have any effect or appear to cause any errors, because the system is in an inconsisntent insane state after the hardware switch until the main rom is restarted.  
+`OUT 128,0` switches to bank 1  
+`OUT 128,1` switches to bank 2  
+`OUT 128,2` switches to bank 3  
+`OUT 128,3` switches to bank 4  
 
-Because of this, this low level method should only be used as part of the one-time initial setup or as a last resort or other special cases.  
+But that is only the hardware/electrical part.  
+Switching banks is like unplugging all of the ram and then plugging in other ram, *while the machine is running*.  
+So you must always also reboot the main rom immediately after any switch, by pressing the reset button.  
+Do not power-cycle, only press the reset button. Power-cycle will switch you back to bank 1, or possibly a random bank.
+
+The 0QUAD bank-switch util does the reset for you. You only need to reset manually if you did the OUT command manually, or if you are writing software to switch banks.
+
+The low level / manual method should only be used as part of the one-time initial setup or as a last resort or other unusual special cases.  
+
+You may also do a full cold-reset (CTRL+BREAK+RESET) if you want to wipe the current bank clean, the same as with the normal internal ram. It will only wipe the current bank, not all banks.  
 
 For normal usage, see the directions and software for the original [QUAD](http://bitchin100.com/wiki/index.php?title=QUAD).  
 
 You should use either the simple bank-switch program (BANK.DO) or 0QUAD (QUAD.BA) for normal operation.  
 
-Copies of QUAD.BA and BANK.DO are included in the APP directory in this repo.
+Copies of QUAD.BA and BANK.DO are included in the APP directory.
 
 ## Thanks
 Steve Adolph for sharing his original design and allowing this derivative.
