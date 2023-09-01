@@ -1,5 +1,6 @@
 # reQUAD
-![](../../raw/main/PCB/reQUAD.jpg)
+![](../../raw/main/PCB/reQUAD_f.jpg)
+![](../../raw/main/PCB/reQUAD_b.jpg)
 ![](../../raw/main/PCB/reQUAD_top.jpg)
 ![](../../raw/main/PCB/reQUAD_bottom.jpg)
 ![](../../raw/main/PCB/reQUAD.svg)
@@ -15,14 +16,11 @@ Instead, the bank-selection flip-flop is a non-resettable type and is kept power
 
 New PCB design.
 
-## Build it
-PCB from [OSHPark](https://oshpark.com/shared_projects/kmJ52kFx) or [PCBWAY](https://www.pcbway.com/project/shareproject/reQUAD_RAM_Expansion_for_TRS_80_Model_100_8690cd19.html)  
-[BOM](https://www.digikey.com/short/mt3jtw7q)
+## To Build it
+PCB [PCBWAY](https://www.pcbway.com/project/shareproject/reQUAD_RAM_Expansion_for_TRS_80_Model_100_8690cd19.html)  
+BOM [DigiKey](https://www.digikey.com/short/vjmw4r5c)
 
-(Watch out that on PCBWAY the order page might automatically select 4mil tracks/spaces initially, which makes the order cost over $50.  
-The board uses all 0.2mm minimum tracks & spaces, which is almost 8mil, so just select the 6/mil option manually on the order page, and the price goes down to $5)
-
-## Use it
+## To Use it
 At it's most BASIC (pun intended), switch banks by typing ```OUT 128,n``` in BASIC, where n is the desired bank number from 0 to 3, and then press the reset button on the back of the machine, but do NOT power-cycle.
 
 ```OUT 128,0``` switches to bank 1  
