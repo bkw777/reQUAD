@@ -81,8 +81,13 @@
   (pad "38" thru_hole circle (at -19.05 7.62 90) (size 1.524 1.524) (drill 0.7112) (layers "*.Cu" "*.Mask") (tstamp e3b4190a-87d1-4af3-baec-b343d00ac799))
   (pad "39" thru_hole circle (at -21.59 7.62 90) (size 1.524 1.524) (drill 0.7112) (layers "*.Cu" "*.Mask") (tstamp ea029198-e3dc-45aa-af76-92ef1c01dae2))
   (pad "40" thru_hole circle (at -24.13 7.62 90) (size 1.524 1.524) (drill 0.7112) (layers "*.Cu" "*.Mask") (tstamp 340ddfd8-491e-4a28-9e98-4fb7514a1b52))
-  (model "${KIPRJMOD}/000_LOCAL.pretty/000_3d/Header-Male-round_2x20x600mil.step"
-    (offset (xyz -24.13 -7.62 4.000000001))
+  (model "${KIPRJMOD}/000_LOCAL.pretty/000_3d/pin_header_round_cut_DIP-40.step"
+    (offset (xyz -24.13 -7.62 0))
+    (scale (xyz 1 1 1))
+    (rotate (xyz 0 0 0))
+  )
+  (model "${KIPRJMOD}/000_LOCAL.pretty/000_3d/solder_domes_DIP-40.step"
+    (offset (xyz -24.13 -7.62 0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))
   )
