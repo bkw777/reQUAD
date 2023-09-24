@@ -34,9 +34,9 @@
         "other_text_thickness": 0.15,
         "other_text_upright": false,
         "pads": {
-          "drill": 0.762,
-          "height": 1.524,
-          "width": 1.524
+          "drill": 0.0,
+          "height": 1.0,
+          "width": 1.0
         },
         "silk_line_width": 0.12,
         "silk_text_italic": false,
@@ -56,7 +56,18 @@
           "width": 0.0
         }
       ],
-      "drc_exclusions": [],
+      "drc_exclusions": [
+        "silk_edge_clearance|124568435|91079935|953864de-aa28-4d7f-bbf2-d1551e558734|cac5eb66-b402-45c5-8ff6-3bb5bd18c198",
+        "silk_edge_clearance|124569185|108920815|ff586ae1-6b8f-4f2c-b60d-9c0d7f512863|36319af0-31af-4071-9276-3cbc3d72fc1b",
+        "silk_edge_clearance|124599293|102413000|4a992afa-6662-49b2-b92a-8357733f4091|5e73211f-9c51-4f4a-88d0-11046e934589",
+        "silk_edge_clearance|124599293|104953000|4a992afa-6662-49b2-b92a-8357733f4091|b670c2d6-a98f-49cf-b853-f3b310efc0ce",
+        "silk_edge_clearance|125491295|104587707|4a992afa-6662-49b2-b92a-8357733f4091|93fa3d5c-cec7-4be6-ae4b-619f3ec71e3e",
+        "silk_edge_clearance|175430065|108921565|479f1703-af9d-4fef-b92f-82961f78192e|1ff82b25-98dd-4324-8395-4b04ca570476",
+        "silk_edge_clearance|175430065|108921565|479f1703-af9d-4fef-b92f-82961f78192e|8d8b4b19-0678-4940-a235-bb4649c71615",
+        "silk_edge_clearance|175430815|91079185|60a0834c-01c3-4fa0-a906-41fbc458bea0|2396d452-bc4a-4bad-981e-0e3c3f747afe",
+        "silk_edge_clearance|175430815|91079185|60a0834c-01c3-4fa0-a906-41fbc458bea0|311297da-12bb-4c8c-8ca2-e85e2f97b8fd",
+        "track_dangling|138700000|95936000|c3d1c983-f648-4d07-ba3a-5b0323637ca1|00000000-0000-0000-0000-000000000000"
+      ],
       "meta": {
         "filename": "board_design_settings.json",
         "version": 2
@@ -117,12 +128,12 @@
         "max_error": 0.005,
         "min_clearance": 0.19999999999999998,
         "min_connection": 0.0,
-        "min_copper_edge_clearance": 0.024999999999999998,
+        "min_copper_edge_clearance": 0.19999999999999998,
         "min_hole_clearance": 0.25,
         "min_hole_to_hole": 0.25,
         "min_microvia_diameter": 0.45999999999999996,
         "min_microvia_drill": 0.3,
-        "min_resolved_spokes": 2,
+        "min_resolved_spokes": 1,
         "min_silk_clearance": 0.0,
         "min_text_height": 0.7999999999999999,
         "min_text_thickness": 0.08,
@@ -400,10 +411,10 @@
       "no_connect_dangling": "warning",
       "pin_not_connected": "error",
       "pin_not_driven": "error",
-      "pin_to_pin": "warning",
+      "pin_to_pin": "error",
       "power_pin_not_driven": "error",
       "similar_labels": "warning",
-      "simulation_model_issue": "error",
+      "simulation_model_issue": "ignore",
       "unannotated": "error",
       "unit_value_mismatch": "error",
       "unresolved_variable": "error",
@@ -490,7 +501,7 @@
       "workbook_filename": ""
     },
     "page_layout_descr_file": "",
-    "plot_directory": "/home/bkw/src/reQUAD/PCB/",
+    "plot_directory": "out/",
     "spice_adjust_passive_values": false,
     "spice_current_sheet_as_root": false,
     "spice_external_command": "spice \"%I\"",
