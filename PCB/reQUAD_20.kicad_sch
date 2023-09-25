@@ -4388,7 +4388,7 @@
     (property "Footprint" "000_LOCAL:Keystone_3031" (at 54.61 186.436 90)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "~" (at 54.61 186.436 90)
+    (property "Datasheet" "datasheet/Keystone_3031.pdf" (at 54.61 186.436 90)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 0c740eee-3d9a-4e45-96e6-5aaeec15d80c))
