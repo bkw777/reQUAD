@@ -1,5 +1,6 @@
 # reQUAD
-*v020 is not tested yet*, v017 works, but may not be the most battery efficient on standby.
+<b>*v020 is not tested yet*, v017 works, but may not be the most battery efficient on standby</b>
+
 ![](../../raw/main/PCB/out/reQUAD.f.jpg)
 ![](../../raw/main/PCB/out/reQUAD.b.jpg)
 ![](../../raw/main/PCB/out/reQUAD.top.jpg)
