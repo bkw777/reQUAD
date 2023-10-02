@@ -6,7 +6,7 @@
     (property "Value" "628128_TSOP32" (at 2.54 23.495 0)
       (effects (font (size 1.27 1.27)) (justify left bottom))
     )
-    (property "Footprint" "000_LOCAL:TSOP32-14mm" (at 0 0 0)
+    (property "Footprint" "000_LOCAL:TSOP32-dual" (at 0 0 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "datasheets/628128.pdf" (at 0 0 0)
