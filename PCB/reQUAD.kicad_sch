@@ -7,7 +7,7 @@
   (title_block
     (title "reQUAD")
     (date "2023-10-02")
-    (rev "021")
+    (rev "022")
     (company "Brian K. White - b.kenyon.w@gmail.com")
     (comment 1 "Original Design: Steve Adolph")
   )
@@ -3952,7 +3952,7 @@
     (property "Reference" "R1" (at 243.84 83.82 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "500k" (at 243.84 86.36 0)
+    (property "Value" "470k" (at 243.84 86.36 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Footprint" "000_LOCAL:R_0805" (at 241.3 85.09 0)

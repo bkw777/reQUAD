@@ -19,7 +19,7 @@ Added battery and battery-change cap.
 
 ## To Build it
 PCB [PCBWAY](https://www.pcbway.com/project/shareproject/reQUAD_RAM_Expansion_for_TRS_80_Model_100_8690cd19.html)  
-BOM [DigiKey](https://www.digikey.com/short/bmtwb9m8)
+BOM [DigiKey](https://www.digikey.com/short/z47bn0mw)
 
 ## To Use it
 
