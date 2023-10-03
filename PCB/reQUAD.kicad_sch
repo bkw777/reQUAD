@@ -3372,7 +3372,7 @@
     (property "Footprint" "000_LOCAL:TSOP32-dual" (at 215.9 77.47 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "datasheets/628128.pdf" (at 215.9 77.47 0)
+    (property "Datasheet" "datasheets/AS6C1008.pdf" (at 215.9 77.47 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "24" (uuid 46451f0d-5f4b-4e9f-99f3-093714203142))
