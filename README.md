@@ -62,7 +62,10 @@ Use TEENY to copy QUAD.BA from the pc
 > L QUAD  .BA
 > Q
 ```
-Run QUAD.BA  
+
+On the pc: Ctrl+C to exit dl2
+
+On the 100: Run QUAD.BA  
 Answer "1" to the "Which bank?" question.  
 
 0QUAD is now installed in bank 1, but is invisible.
