@@ -1,26 +1,26 @@
 # reQUAD
 
-![](reQUAD.jpg)
-![](PCB/out/reQUAD.f.jpg)
-![](PCB/out/reQUAD.b.jpg)
-![](PCB/out/reQUAD.top.jpg)
-![](PCB/out/reQUAD.bottom.jpg)
-![](PCB/out/reQUAD.svg)
-<!-- ![](../../raw/main/PCB/out/reQUAD.svg) -->
+![](../../raw/main/reQUAD.jpg)
+![](../../raw/main/PCB/out/reQUAD.f.jpg)
+![](../../raw/main/PCB/out/reQUAD.b.jpg)
+![](../../raw/main/PCB/out/reQUAD.top.jpg)
+![](../../raw/main/PCB/out/reQUAD.bottom.jpg)
+![](../../raw/main/PCB/out/reQUAD.svg)
 
 ## About
 This is a derivative of [QUAD](http://bitchin100.com/wiki/index.php?title=QUAD) by Steve Adolph.
 
 ## Differences from the original
-Removed the resistor-cap power-on-reset circuit and resettable flip-flop for a simple flip-flop.
-
-Added battery and battery-change cap.
-
+Removed the resistor-cap power-on-reset circuit and resettable flip-flop for a simple flip-flop.  
+Added battery and battery-change cap.  
 Added pulldown on the sram CE2.
 
 ## To Build it
 PCB [PCBWAY](https://www.pcbway.com/project/shareproject/reQUAD_RAM_Expansion_for_TRS_80_Model_100_8690cd19.html)  
 BOM [DigiKey](https://www.digikey.com/short/z47bn0mw)
+
+Build notes,  
+The pin 1 mark on DA1, BAV756S, is tiny and faint, but there is one, you just need a lot of magnification and light. The markings look like `.A7t` and the . is at pin 1. The pinout is not symmetric, and so the part must be installed in the correct orientation.
 
 ## To Use it
 
