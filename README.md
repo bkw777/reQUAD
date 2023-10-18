@@ -39,7 +39,8 @@ Install [0QUAD](APP/)
 
 Refer to the docs for the original [QUAD](http://bitchin100.com/wiki/index.php?title=QUAD)
 
-Example (linux or mac, and this will wipe all data):
+### Example Installing 0QUAD using dl2 and teeny
+(this will wipe all data)
 
 On the pc, install [dl2](github.com/bkw777/dl2)
 
@@ -52,8 +53,8 @@ $ cd APP
 $ dl -v -b TEENY.100 && dl -v -u
 ```
 
-On the 100: `RUN "COM:98N1ENN"`  
-Press enter at the end of the teeny install to accept the default install location.  
+On the 100, in BASIC: `RUN "COM:98N1ENN"`  
+Press ENTER at the end of the TEENY install to accept the default install location.  
 `CLEAR 0,62213`  
 Press F8 to exit to the main menu and run TEENY.CO  
 Use TEENY to copy QUAD.BA from the pc  
@@ -66,14 +67,19 @@ Answer "1" to the "Which bank?" question.
 
 0QUAD is now installed in bank 1, but is invisible.
 
-Type `0QUAD` right at the main menu (not in BASIC), to run the invisible 0QUAD
+Type `0QUAD` at the main menu (not in BASIC) to run 0QUAD
 
 Now the top-right corner will show "#1" to show that you are currently in bank 1.  
-Press F1 to pull up the bank-switch menu, press F2 to switch to bank 2.
+Press F1 to pull up the bank-switch menu, then press F2 to switch to bank 2.
 
 You are now in bank 2 which is a new bank of new blank ram.
 
-Repeat everything above after the initial OUT command (meaning don't do the OUT command, but do do the ctrl+break+reset) to install 0QUAD in this bank and then use it to move on to banks 3 & 4.
+Install 0QUAD in bank 2 by repeating everything after the OUT command above.  
+This includes do the CTRL+BREAK+RESET to ensure all the ram in this bank starts out clear instead of random before you start using it.  
+Answer "2" at the "Which bank?" question.  
+Repeat again for banks 3 and 4.
+
+Once 0QUAD is installed in all banks, you can use it to switch from any bank to any other bank, and you don't need to press the reset button after each switch when using 0QUAD to switch.
 
 ## Thanks
-Steve Adolph for sharing his original design and allowing this derivative.
+Thanks to Steve Adolph for sharing his original design and allowing this derivative.
