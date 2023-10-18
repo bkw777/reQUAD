@@ -12,11 +12,11 @@
 This is a derivative of [QUAD](http://bitchin100.com/wiki/index.php?title=QUAD) by Steve Adolph.
 
 ## Differences from the original
-Removed the resistor-cap power-on-reset circuit and resettable flip-flop for a simpler flip-flop.
-
-Added pulldown on /CE
+Removed the resistor-cap power-on-reset circuit and resettable flip-flop for a simple flip-flop.
 
 Added battery and battery-change cap.
+
+Added pulldown on the sram CE2.
 
 ## To Build it
 PCB [PCBWAY](https://www.pcbway.com/project/shareproject/reQUAD_RAM_Expansion_for_TRS_80_Model_100_8690cd19.html)  
@@ -40,6 +40,8 @@ Install [0QUAD](APP/)
 Refer to the docs for the original [QUAD](http://bitchin100.com/wiki/index.php?title=QUAD)
 
 Example (linux or mac, and this will wipe all data):
+
+On the pc, install [dl2](github.com/bkw777/dl2)
 
 On the 100. in BASIC: `OUT 128,0`  
 Then do a cold reset: CTRL+BREAK+RESET
