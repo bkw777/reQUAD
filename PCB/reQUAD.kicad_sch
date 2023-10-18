@@ -6,8 +6,8 @@
 
   (title_block
     (title "reQUAD")
-    (date "2023-10-02")
-    (rev "022")
+    (date "2023-10-18")
+    (rev "023")
     (company "Brian K. White - b.kenyon.w@gmail.com")
     (comment 1 "Original Design: Steve Adolph")
   )
@@ -2219,7 +2219,7 @@
     (uuid 39f7f4a9-4325-45cf-b2bf-3d2f23550663)
   )
 
-  (wire (pts (xy 40.64 80.01) (xy 40.64 156.21))
+  (wire (pts (xy 40.64 80.01) (xy 40.64 154.94))
     (stroke (width 0) (type default))
     (uuid 3a3c106a-17fb-4086-801e-f91cf34353f6)
   )
@@ -2317,7 +2317,7 @@
     (stroke (width 0) (type default))
     (uuid 5d636b0e-0291-4bf7-891c-55e43d61b322)
   )
-  (wire (pts (xy 238.76 80.01) (xy 238.76 156.21))
+  (wire (pts (xy 238.76 80.01) (xy 238.76 154.94))
     (stroke (width 0) (type default))
     (uuid 5d8505d5-957e-4a5c-bb36-5bd89c5d0c2a)
   )
@@ -2731,7 +2731,7 @@
     (uuid e686ab44-74f8-4d85-9a9b-2c5acdd949e4)
   )
 
-  (wire (pts (xy 238.76 156.21) (xy 40.64 156.21))
+  (wire (pts (xy 238.76 154.94) (xy 40.64 154.94))
     (stroke (width 0) (type default))
     (uuid e9b666b9-2195-4b69-a624-c84770634cfa)
   )
@@ -2806,6 +2806,10 @@
     (uuid fd2946b3-7094-419b-9f85-90f3da5fbd2e)
   )
 
+  (text "3v CR1025" (at 58.42 185.42 0)
+    (effects (font (size 1.27 1.27)) (justify left bottom))
+    (uuid 6f640e32-b46a-4f65-9f5a-56fb89dfd9cf)
+  )
   (text "AS6C1008\nIS62C1024\nCY62128\nR1LP0108" (at 210.82 116.205 0)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid b409001d-46e5-4bc8-b19d-1cfdb2afc274)
@@ -3153,7 +3157,7 @@
     (property "Value" "Model_100_System_BUS" (at 69.85 44.45 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "000_LOCAL:DIP-40_pins" (at 69.85 76.2 0)
+    (property "Footprint" "000_LOCAL:DIP-40_PCB" (at 69.85 76.2 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "datasheets/TRS-80_Model_100_User_Guide.pdf" (at 69.85 78.74 0)
@@ -3722,7 +3726,7 @@
   (symbol (lib_id "000_LOCAL:C") (at 139.7 184.15 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-00006071a680)
-    (property "Reference" "C1" (at 139.7 181.61 0)
+    (property "Reference" "C2" (at 139.7 181.61 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "1u" (at 139.7 186.69 0)
@@ -3739,7 +3743,7 @@
     (instances
       (project "reQUAD"
         (path "/28a4b045-d480-4410-adb7-fa6b33984079"
-          (reference "C1") (unit 1)
+          (reference "C2") (unit 1)
         )
       )
     )
@@ -3923,7 +3927,7 @@
   (symbol (lib_id "000_LOCAL:C") (at 120.65 184.15 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 4a2b28ca-5047-4702-825c-ee6cd5506e61)
-    (property "Reference" "C2" (at 120.65 181.61 0)
+    (property "Reference" "C1" (at 120.65 181.61 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "1u" (at 120.65 186.69 0)
@@ -3940,7 +3944,7 @@
     (instances
       (project "reQUAD"
         (path "/28a4b045-d480-4410-adb7-fa6b33984079"
-          (reference "C2") (unit 1)
+          (reference "C1") (unit 1)
         )
       )
     )
@@ -3949,7 +3953,7 @@
   (symbol (lib_id "000_LOCAL:R") (at 241.3 85.09 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 4cbb8517-567c-4376-898a-3f72be0bc48d)
-    (property "Reference" "R1" (at 243.84 83.82 0)
+    (property "Reference" "R2" (at 243.84 83.82 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "470k" (at 243.84 86.36 0)
@@ -3966,7 +3970,7 @@
     (instances
       (project "reQUAD"
         (path "/28a4b045-d480-4410-adb7-fa6b33984079"
-          (reference "R1") (unit 1)
+          (reference "R2") (unit 1)
         )
       )
     )
@@ -4105,7 +4109,7 @@
   (symbol (lib_id "000_LOCAL:R") (at 146.05 179.07 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 7579f21f-0a49-49af-b14c-ffc919af42fe)
-    (property "Reference" "R2" (at 148.59 177.8 0)
+    (property "Reference" "R1" (at 148.59 177.8 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "1k" (at 148.59 180.34 0)
@@ -4122,7 +4126,7 @@
     (instances
       (project "reQUAD"
         (path "/28a4b045-d480-4410-adb7-fa6b33984079"
-          (reference "R2") (unit 1)
+          (reference "R1") (unit 1)
         )
       )
     )
