@@ -42,7 +42,7 @@ Refer to the docs for the original [QUAD](http://bitchin100.com/wiki/index.php?t
 ### Example Installing 0QUAD using dl2 and teeny
 (this will wipe all data)
 
-On the pc, install [dl2](github.com/bkw777/dl2)
+On the pc, install [dl2](https://github.com/bkw777/dl2/)
 
 On the 100. in BASIC: `OUT 128,0`  
 Then do a cold reset: CTRL+BREAK+RESET
