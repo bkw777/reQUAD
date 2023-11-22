@@ -63,8 +63,10 @@
     (stroke (width 0.127) (type solid)) (layer "F.Fab") (tstamp 72a164d4-c19b-4bde-b002-bd42fa5dc1dd))
   (fp_line (start 5.3 -4.59) (end 5.3 4.02)
     (stroke (width 0.127) (type solid)) (layer "F.Fab") (tstamp 4b86c5a7-c5ee-410c-9557-38933b29fcc0))
-  (pad "1" thru_hole oval (at -5.3 0) (size 1.4 4) (drill oval 0.8 1.8) (layers "*.Cu" "*.Mask") (tstamp 73720ef1-4cb7-4d8c-a7c4-c56676af2d0d))
-  (pad "1" thru_hole oval (at 5.3 0) (size 1.4 4) (drill oval 0.8 1.8) (layers "*.Cu" "*.Mask") (tstamp 8c63455e-ab48-42c3-851e-de92083d20e1))
+  (pad "1" thru_hole oval (at -5.3 0) (size 1.4 2.4) (drill oval 0.8 1.8) (layers "*.Cu" "*.Mask") (tstamp 73720ef1-4cb7-4d8c-a7c4-c56676af2d0d))
+  (pad "1" smd oval (at -5.3 0) (size 1.4 4) (layers "F.Cu" "F.Mask") (tstamp 538baa8a-b478-43f7-95f2-5b147d01f39b))
+  (pad "1" thru_hole oval (at 5.3 0) (size 1.4 2.4) (drill oval 0.8 1.8) (layers "*.Cu" "*.Mask") (tstamp 8c63455e-ab48-42c3-851e-de92083d20e1))
+  (pad "1" smd oval (at 5.3 0) (size 1.4 4) (layers "F.Cu" "F.Mask") (tstamp 5b80e8c3-e39b-47c2-9788-4578bd46b665))
   (pad "2" smd circle (at 0 0) (size 8 8) (layers "F.Cu" "F.Mask")
     (solder_mask_margin 0.2) (zone_connect 2) (tstamp a4cd6131-cccf-45f9-823c-7abfdc139696))
   (model "${KIPRJMOD}/000_LOCAL.pretty/000_3d/Keystone_3031.step"
@@ -76,5 +78,10 @@
     (offset (xyz 0 0 0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))
+  )
+  (model "${KIPRJMOD}/000_LOCAL.pretty/000_3d/Keystone_3031_open.step" hide
+    (offset (xyz 0 -4 2.8))
+    (scale (xyz 1 1 1))
+    (rotate (xyz -90 0 180))
   )
 )
