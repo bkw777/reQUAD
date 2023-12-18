@@ -24,15 +24,35 @@ The pin 1 mark on DA1, BAV756S, is tiny and faint, but there is one, you just ne
 
 ## To Use it
 
+The first time the device is powered up, it will be in a random bank number.
+
+The first thing you should do after install is explicitly switch to bank 1.
+
+In BASIC type `OUT 128,0` \[Enter\],  
+then ignore any messages and immediately press RESET.  
+Only RESET, or CTRL+BREAK+RESET, but NOT power-cycle!  
+Power-cycle will make the bank number unknown and random again.
+
+And then either install 0QUAD or at least create an empty text file named BANK1 so that you can identify which bank you are in. Then repeat for banks 2, 3, 4.
+
+After that, either 0QUAD or the text file names will let you see which bank you are in at any time, for instance after a power-cycle.
+
 ### Manual Control
-Switch banks by typing `OUT 128,n` in BASIC, where n is the desired bank number from 0 to 3,  
+Switch banks by typing `OUT 128,n` in BASIC, where n is the desired bank number from 0 to 3,
 
 `OUT 128,0` switches to bank 1  
 `OUT 128,1` switches to bank 2  
 `OUT 128,2` switches to bank 3  
 `OUT 128,3` switches to bank 4  
 
-And then immediately press the reset button on the back of the machine.
+Then ignore any error messages or any other screen activity,  
+and immediately press the reset button on the back of the machine.
+
+The OUT command might seem to do nothing, or might generate some error message, or might exit to the main menu, or lock up the machine, or might seem to do almost anything.  
+Ignore all of that. It doesn't matter what the machine does, just always press the reset button once immediately after the OUT command.
+
+This is only when switching manually this way. 0QUAD performs a managed graceful switch that restarts the main rom itself.
+
 
 ### Software Control
 Install [0QUAD](APP/)
@@ -44,7 +64,7 @@ Refer to the docs for the original [QUAD](http://bitchin100.com/wiki/index.php?t
 
 On the pc, install [dl2](https://github.com/bkw777/dl2/)
 
-On the 100. in BASIC: `OUT 128,0`  
+On the 100, in BASIC: `OUT 128,0`  
 Then do a cold reset: CTRL+BREAK+RESET
 
 On the pc:
@@ -75,10 +95,10 @@ Type `0QUAD` at the main menu (not in BASIC) to run 0QUAD
 Now the top-right corner will show "#1" to show that you are currently in bank 1.  
 Press F1 to pull up the bank-switch menu, then press F2 to switch to bank 2.
 
-You are now in bank 2 which is a new bank of new blank ram.
+You are now in bank 2 which is a new empty bank.  
+0QUAD is not installed in this bank yet.
 
-Install 0QUAD in bank 2 by repeating everything after the OUT command above.  
-This includes do the CTRL+BREAK+RESET to ensure all the ram in this bank starts out clear instead of random before you start using it.  
+Install 0QUAD in bank 2 by repeating everything after the OUT command above, including the cold reset.  
 Answer "2" at the "Which bank?" question.  
 Repeat again for banks 3 and 4.
 
