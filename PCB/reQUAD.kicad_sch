@@ -6,8 +6,8 @@
 	(paper "USLetter")
 	(title_block
 		(title "reQUAD")
-		(date "2023-10-18")
-		(rev "023")
+		(date "2024-11-21")
+		(rev "024")
 		(company "Brian K. White - b.kenyon.w@gmail.com")
 		(comment 1 "Original Design: Steve Adolph")
 	)
@@ -8075,7 +8075,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "datasheets/74AHC02.pdf"
+		(property "Datasheet" "datasheets/HC02.pdf"
 			(at 119.38 127 0)
 			(effects
 				(font
@@ -8084,7 +8084,16 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "IC GATE NOR 4CH 2-INP 14TSSOP"
+			(at 119.38 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "74HC02PW,118"
 			(at 119.38 127 0)
 			(effects
 				(font
@@ -8179,7 +8188,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "datasheets/74AHC02.pdf"
+		(property "Datasheet" "datasheets/HC02.pdf"
 			(at 104.14 127 0)
 			(effects
 				(font
@@ -8188,7 +8197,16 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "IC GATE NOR 4CH 2-INP 14TSSOP"
+			(at 104.14 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "74HC02PW,118"
 			(at 104.14 127 0)
 			(effects
 				(font
@@ -8283,7 +8301,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "datasheets/74AHC02.pdf"
+		(property "Datasheet" "datasheets/HC02.pdf"
 			(at 119.38 149.86 0)
 			(effects
 				(font
@@ -8292,7 +8310,16 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "IC GATE NOR 4CH 2-INP 14TSSOP"
+			(at 119.38 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "74HC02PW,118"
 			(at 119.38 149.86 0)
 			(effects
 				(font
@@ -8386,7 +8413,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "datasheets/74AHC02.pdf"
+		(property "Datasheet" "datasheets/HC02.pdf"
 			(at 104.14 147.32 0)
 			(effects
 				(font
@@ -8395,7 +8422,16 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "IC GATE NOR 4CH 2-INP 14TSSOP"
+			(at 104.14 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "74HC02PW,118"
 			(at 104.14 147.32 0)
 			(effects
 				(font
@@ -8499,7 +8535,16 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "IC SRAM 1Mx8 PARALLEL 5V 32STSOP"
+			(at 215.9 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "AS6C1008-55STIN"
 			(at 215.9 77.47 0)
 			(effects
 				(font
@@ -8648,7 +8693,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "datasheets/74AHC02.pdf"
+		(property "Datasheet" "datasheets/HC02.pdf"
 			(at 88.9 184.15 0)
 			(effects
 				(font
@@ -8657,7 +8702,16 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "IC GATE NOR 4CH 2-INP 14TSSOP"
+			(at 88.9 184.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "74HC02PW,118"
 			(at 88.9 184.15 0)
 			(effects
 				(font
@@ -8751,7 +8805,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "datasheets/74AHC573.pdf"
+		(property "Datasheet" "datasheets/HC573.pdf"
 			(at 158.75 60.96 0)
 			(effects
 				(font
@@ -8760,7 +8814,16 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "IC D-TYPE TRANSP SGL 8:8 20TSSOP"
+			(at 158.75 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "74AHC573PW,118"
 			(at 158.75 60.96 0)
 			(effects
 				(font
@@ -8874,7 +8937,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "datasheets/74LVC2G79.pdf"
+		(property "Datasheet" "datasheets/2G79.pdf"
 			(at 158.75 92.71 0)
 			(effects
 				(font
@@ -8883,7 +8946,16 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "IC FF D-TYPE DUAL 1BIT SM8"
+			(at 158.75 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "SN74LVC2G79DCTR"
 			(at 158.75 92.71 0)
 			(effects
 				(font
@@ -8961,7 +9033,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "datasheets/74LVC2G79.pdf"
+		(property "Datasheet" "datasheets/2G79.pdf"
 			(at 158.75 102.87 0)
 			(effects
 				(font
@@ -8970,7 +9042,16 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "IC FF D-TYPE DUAL 1BIT SM8"
+			(at 158.75 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "SN74LVC2G79DCTR"
 			(at 158.75 102.87 0)
 			(effects
 				(font
@@ -9179,7 +9260,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "datasheets/74LVC2G79.pdf"
+		(property "Datasheet" "datasheets/2G79.pdf"
 			(at 101.6 184.15 0)
 			(effects
 				(font
@@ -9188,7 +9269,16 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "IC FF D-TYPE DUAL 1BIT SM8"
+			(at 101.6 184.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "SN74LVC2G79DCTR"
 			(at 101.6 184.15 0)
 			(effects
 				(font
@@ -10011,7 +10101,16 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "DIODE ARRAY GP 90V 250MA 6TSSOP"
+			(at 39.37 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "BAV756S,115"
 			(at 39.37 177.8 0)
 			(effects
 				(font
@@ -10828,7 +10927,16 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "DIODE ARRAY GP 90V 250MA 6TSSOP"
+			(at 46.99 182.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "BAV756S,115"
 			(at 46.99 182.88 0)
 			(effects
 				(font
@@ -11238,7 +11346,16 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Battery Retainer Coin, 10.0mm 1 Cell PC Pin"
+			(at 54.61 187.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "Keystone 3031"
 			(at 54.61 187.96 0)
 			(effects
 				(font
