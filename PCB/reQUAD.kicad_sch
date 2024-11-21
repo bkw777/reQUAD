@@ -2862,7 +2862,7 @@
 					(justify left)
 				)
 			)
-			(property "Footprint" "000_LOCAL:C_0805"
+			(property "Footprint" ""
 				(at 0 0 0)
 				(effects
 					(font
@@ -2955,6 +2955,163 @@
 				(pin passive line
 					(at 0 -2.54 90)
 					(length 2.032)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "000_LOCAL:C_Polarized"
+			(pin_numbers hide)
+			(pin_names
+				(offset 0.254) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "C"
+				(at 0.254 1.778 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "C_Polarized_Small"
+				(at 0.254 -2.032 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Polarized capacitor, small symbol"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "cap capacitor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "CP_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "C_Polarized_0_1"
+				(rectangle
+					(start -1.524 -0.3048)
+					(end 1.524 -0.6858)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(rectangle
+					(start -1.524 0.6858)
+					(end 1.524 0.3048)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 1.524) (xy -0.762 1.524)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.016 1.27) (xy -1.016 1.778)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "C_Polarized_1_1"
+				(pin passive line
+					(at 0 2.54 270)
+					(length 1.8542)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -2.54 90)
+					(length 1.8542)
 					(name "~"
 						(effects
 							(font
@@ -4557,6 +4714,12 @@
 		(uuid "01228913-f201-4162-ab9b-015c44886095")
 	)
 	(junction
+		(at 116.84 186.69)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "03ebe0c1-8627-4cac-99a0-7ef11cadb971")
+	)
+	(junction
 		(at 177.8 114.3)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4609,6 +4772,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "f303cb83-d158-43bf-8e43-a0188c44fbdf")
+	)
+	(junction
+		(at 116.84 181.61)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "fb318027-0a7e-46a7-84b1-ffe7b7165209")
 	)
 	(no_connect
 		(at 57.15 57.15)
@@ -6006,7 +6175,7 @@
 	)
 	(wire
 		(pts
-			(xy 133.35 31.75) (xy 133.35 71.12)
+			(xy 133.35 38.1) (xy 133.35 71.12)
 		)
 		(stroke
 			(width 0)
@@ -6163,6 +6332,16 @@
 			(type default)
 		)
 		(uuid "94fdf6f5-0a57-4d96-9626-72a1e63f8391")
+	)
+	(wire
+		(pts
+			(xy 116.84 186.69) (xy 123.19 186.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "96d3f520-2876-4cc5-aab9-9468b29a37fb")
 	)
 	(bus
 		(pts
@@ -6546,7 +6725,7 @@
 	)
 	(wire
 		(pts
-			(xy 50.8 31.75) (xy 50.8 72.39)
+			(xy 50.8 38.1) (xy 50.8 72.39)
 		)
 		(stroke
 			(width 0)
@@ -6786,6 +6965,16 @@
 	)
 	(wire
 		(pts
+			(xy 116.84 181.61) (xy 123.19 181.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ee752689-c4d8-449e-93f9-efe41d4feba6")
+	)
+	(wire
+		(pts
 			(xy 199.39 82.55) (xy 203.2 82.55)
 		)
 		(stroke
@@ -6896,7 +7085,7 @@
 	)
 	(wire
 		(pts
-			(xy 50.8 31.75) (xy 133.35 31.75)
+			(xy 50.8 38.1) (xy 133.35 38.1)
 		)
 		(stroke
 			(width 0)
@@ -7694,7 +7883,7 @@
 		)
 		(uuid "d76cd3bb-6aa1-4c9e-a7c8-048c8d28148f")
 	)
-	(label "BANK_LATCH"
+	(label "~{BANK}"
 		(at 127 127 0)
 		(fields_autoplaced yes)
 		(effects
@@ -7902,7 +8091,16 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "CONN HEADER VERT 40P 2.54MM"
+			(at 69.85 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "920-0172-01"
 			(at 69.85 76.2 0)
 			(effects
 				(font
@@ -9095,7 +9293,7 @@
 	)
 	(symbol
 		(lib_id "power:VMEM")
-		(at 139.7 181.61 0)
+		(at 133.35 181.61 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -9103,7 +9301,7 @@
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00006055ba95")
 		(property "Reference" "#PWR0114"
-			(at 139.7 185.42 0)
+			(at 133.35 185.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9112,7 +9310,7 @@
 			)
 		)
 		(property "Value" "VMEM"
-			(at 139.7 177.8 0)
+			(at 133.35 177.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9120,7 +9318,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 139.7 181.61 0)
+			(at 133.35 181.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9129,7 +9327,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 139.7 181.61 0)
+			(at 133.35 181.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9138,7 +9336,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 139.7 181.61 0)
+			(at 133.35 181.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9454,15 +9652,15 @@
 	)
 	(symbol
 		(lib_id "000_LOCAL:C")
-		(at 139.7 184.15 0)
+		(at 123.19 184.15 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "00000000-0000-0000-0000-00006071a680")
-		(property "Reference" "C2"
-			(at 139.7 181.61 0)
+		(uuid "0f5e5460-5893-425f-93b1-5a29b42e30b0")
+		(property "Reference" "C3"
+			(at 124.46 182.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9471,7 +9669,7 @@
 			)
 		)
 		(property "Value" "1u"
-			(at 139.7 186.69 0)
+			(at 124.46 185.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9480,7 +9678,7 @@
 			)
 		)
 		(property "Footprint" "000_LOCAL:C_0805"
-			(at 139.7 184.15 0)
+			(at 124.1552 187.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9488,8 +9686,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
-			(at 139.7 184.15 0)
+		(property "Datasheet" "datasheets/CL21B105KAFNNNE.pdf"
+			(at 123.19 184.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9497,8 +9695,17 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
-			(at 139.7 184.15 0)
+		(property "Description" "CAP CER 1UF 25V X7R 0805"
+			(at 123.19 184.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "CL21B105KAFNNNE"
+			(at 123.19 184.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9507,15 +9714,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "dfa46e93-b359-4b4a-92e9-3775d9bfe833")
+			(uuid "8b7726f3-f3af-439e-9a2f-6988ff1eb28c")
 		)
 		(pin "2"
-			(uuid "70a494bd-c2c0-43de-8624-98a9da4d44a4")
+			(uuid "b0fadddb-cbd9-46e4-bb03-e19218526e67")
 		)
 		(instances
 			(project "reQUAD"
 				(path "/28a4b045-d480-4410-adb7-fa6b33984079"
-					(reference "C2")
+					(reference "C3")
 					(unit 1)
 				)
 			)
@@ -9855,75 +10062,6 @@
 		)
 	)
 	(symbol
-		(lib_id "000_LOCAL:C")
-		(at 120.65 184.15 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "4a2b28ca-5047-4702-825c-ee6cd5506e61")
-		(property "Reference" "C4"
-			(at 120.65 181.61 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "1u"
-			(at 120.65 186.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "000_LOCAL:C_0805"
-			(at 120.65 184.15 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 120.65 184.15 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 120.65 184.15 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "7f56ee96-4e60-4697-bb42-6701913c71da")
-		)
-		(pin "2"
-			(uuid "b962bcef-d65c-41bf-8b46-fa9b0e2833bf")
-		)
-		(instances
-			(project "reQUAD"
-				(path "/28a4b045-d480-4410-adb7-fa6b33984079"
-					(reference "C4")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "000_LOCAL:R")
 		(at 241.3 85.09 0)
 		(unit 1)
@@ -9960,7 +10098,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "datasheets/PYu-RC_Group_51_RoHS_L_12.pdf"
 			(at 241.3 85.09 0)
 			(effects
 				(font
@@ -9969,7 +10107,16 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "RES 470K OHM 1% 1/8W 0805"
+			(at 241.3 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "RC0805FR-07470KL"
 			(at 241.3 85.09 0)
 			(effects
 				(font
@@ -10053,6 +10200,84 @@
 			(project "reQUAD"
 				(path "/28a4b045-d480-4410-adb7-fa6b33984079"
 					(reference "#PWR0111")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "000_LOCAL:R")
+		(at 146.05 179.07 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "526139b4-e497-4468-a4c9-eb9dfcf92fb0")
+		(property "Reference" "R1"
+			(at 147.32 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1k"
+			(at 147.32 180.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "000_LOCAL:R_0805"
+			(at 146.05 179.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "datasheets/RK73.pdf"
+			(at 146.05 179.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "RES 1K OHM 5% 1/4W 0805"
+			(at 146.05 179.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "RK73B2ATTD102J"
+			(at 146.05 179.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "4791c4fc-5f8b-4005-8c67-c2aca6fb152f")
+		)
+		(pin "2"
+			(uuid "3ada671f-13fa-45ae-b28f-f2a889a37827")
+		)
+		(instances
+			(project "reQUAD"
+				(path "/28a4b045-d480-4410-adb7-fa6b33984079"
+					(reference "R1")
 					(unit 1)
 				)
 			)
@@ -10215,143 +10440,9 @@
 		)
 	)
 	(symbol
-		(lib_id "000_LOCAL:R")
-		(at 146.05 179.07 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "7579f21f-0a49-49af-b14c-ffc919af42fe")
-		(property "Reference" "R1"
-			(at 148.59 177.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "1k"
-			(at 148.59 180.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "000_LOCAL:R_0805"
-			(at 146.05 179.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 146.05 179.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 146.05 179.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "e2be4aec-73c5-4b4a-9839-fa6e9a245e69")
-		)
-		(pin "2"
-			(uuid "7a4bb5db-a062-412a-9454-20fca32cfe04")
-		)
-		(instances
-			(project "reQUAD"
-				(path "/28a4b045-d480-4410-adb7-fa6b33984079"
-					(reference "R1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:VBUS")
-		(at 127 181.61 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "84893ddd-b7a0-4c56-9429-d0f0d4ed1621")
-		(property "Reference" "#PWR04"
-			(at 127 185.42 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "VBUS"
-			(at 127 177.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 127 181.61 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 127 181.61 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 127 181.61 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "b25b2103-c019-4bbf-b9a7-c7988b33e143")
-		)
-		(instances
-			(project "reQUAD"
-				(path "/28a4b045-d480-4410-adb7-fa6b33984079"
-					(reference "#PWR04")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_name "GND_4")
 		(lib_id "power:GND")
-		(at 139.7 186.69 0)
+		(at 133.35 186.69 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -10359,7 +10450,7 @@
 		(dnp no)
 		(uuid "8b89b555-986c-4992-80ca-4780a95c336e")
 		(property "Reference" "#PWR015"
-			(at 139.7 193.04 0)
+			(at 133.35 193.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10368,7 +10459,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 139.7 190.5 0)
+			(at 133.35 190.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10377,7 +10468,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 139.7 186.69 0)
+			(at 133.35 186.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10386,7 +10477,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 139.7 186.69 0)
+			(at 133.35 186.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10395,7 +10486,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 139.7 186.69 0)
+			(at 133.35 186.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10549,15 +10640,15 @@
 	)
 	(symbol
 		(lib_id "000_LOCAL:C")
-		(at 127 184.15 0)
+		(at 133.35 184.15 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "9e86316f-777f-45d8-a26e-d259a731abbc")
-		(property "Reference" "C3"
-			(at 127 181.61 0)
+		(uuid "9a3d0ad8-94e0-42cb-b1d8-b2202fcfe906")
+		(property "Reference" "C2"
+			(at 134.62 182.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10566,7 +10657,7 @@
 			)
 		)
 		(property "Value" "1u"
-			(at 127 186.69 0)
+			(at 134.62 185.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10575,7 +10666,7 @@
 			)
 		)
 		(property "Footprint" "000_LOCAL:C_0805"
-			(at 127 184.15 0)
+			(at 134.3152 187.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10583,8 +10674,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
-			(at 127 184.15 0)
+		(property "Datasheet" "datasheets/CL21B105KAFNNNE.pdf"
+			(at 133.35 184.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10592,8 +10683,17 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
-			(at 127 184.15 0)
+		(property "Description" "CAP CER 1UF 25V X7R 0805"
+			(at 133.35 184.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "CL21B105KAFNNNE"
+			(at 133.35 184.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10602,15 +10702,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "e5b32d94-34e5-4d8a-8891-d4edd34d24cd")
+			(uuid "d55dd623-1d06-4e41-9393-8e4b4ac4c62d")
 		)
 		(pin "2"
-			(uuid "4a12bafa-4c79-44a1-a984-e751f4e3b567")
+			(uuid "078c1939-5fd0-470a-bcc0-5ce2e72e39d9")
 		)
 		(instances
 			(project "reQUAD"
 				(path "/28a4b045-d480-4410-adb7-fa6b33984079"
-					(reference "C3")
+					(reference "C2")
 					(unit 1)
 				)
 			)
@@ -10619,74 +10719,7 @@
 	(symbol
 		(lib_name "GND_4")
 		(lib_id "power:GND")
-		(at 127 186.69 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "a1e365cc-881f-4055-92e4-ad89e57091cf")
-		(property "Reference" "#PWR014"
-			(at 127 193.04 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 127 190.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" ""
-			(at 127 186.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 127 186.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 127 186.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "f29397d9-e126-45f9-b455-08fec2bf49d3")
-		)
-		(instances
-			(project "reQUAD"
-				(path "/28a4b045-d480-4410-adb7-fa6b33984079"
-					(reference "#PWR014")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_name "GND_4")
-		(lib_id "power:GND")
-		(at 120.65 186.69 0)
+		(at 116.84 186.69 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -10694,7 +10727,7 @@
 		(dnp no)
 		(uuid "a33a18ad-3f18-4fd3-a8fc-4e46af8d394d")
 		(property "Reference" "#PWR011"
-			(at 120.65 193.04 0)
+			(at 116.84 193.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10703,7 +10736,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 120.65 190.5 0)
+			(at 116.84 190.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10712,7 +10745,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 120.65 186.69 0)
+			(at 116.84 186.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10721,7 +10754,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 120.65 186.69 0)
+			(at 116.84 186.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10730,7 +10763,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 120.65 186.69 0)
+			(at 116.84 186.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10973,6 +11006,84 @@
 		)
 	)
 	(symbol
+		(lib_id "000_LOCAL:C")
+		(at 116.84 184.15 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "bdf2770a-94b2-4e59-8a28-7009b7280bf7")
+		(property "Reference" "C4"
+			(at 118.11 182.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1u"
+			(at 118.11 185.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "000_LOCAL:C_0805"
+			(at 117.8052 187.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "datasheets/CL21B105KAFNNNE.pdf"
+			(at 116.84 184.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "CAP CER 1UF 25V X7R 0805"
+			(at 116.84 184.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "CL21B105KAFNNNE"
+			(at 116.84 184.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "940f04df-c1b7-4c5c-ba22-fcc13c69b963")
+		)
+		(pin "2"
+			(uuid "88b027a4-c564-478d-bb49-a9806e499656")
+		)
+		(instances
+			(project "reQUAD"
+				(path "/28a4b045-d480-4410-adb7-fa6b33984079"
+					(reference "C4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:VBUS")
 		(at 101.6 176.53 0)
 		(unit 1)
@@ -11103,6 +11214,84 @@
 		)
 	)
 	(symbol
+		(lib_id "000_LOCAL:C_Polarized")
+		(at 146.05 184.15 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "cea626e6-ddb1-4651-996b-ad742051cda4")
+		(property "Reference" "C1"
+			(at 149.86 182.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "220u10v"
+			(at 149.86 185.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "000_LOCAL:CP_6032"
+			(at 146.05 184.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "datasheets/TAJ.odf"
+			(at 146.05 184.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "CAP TANT 220UF 10% 10V 2312"
+			(at 146.05 184.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "TAJC227K010RNJ"
+			(at 146.05 184.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "6bae5da6-61f5-42b5-9377-4a370c0fdf29")
+		)
+		(pin "2"
+			(uuid "32190fd3-469e-4394-8c34-517521b7dc15")
+		)
+		(instances
+			(project "reQUAD"
+				(path "/28a4b045-d480-4410-adb7-fa6b33984079"
+					(reference "C1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_name "GND_4")
 		(lib_id "power:GND")
 		(at 54.61 190.5 0)
@@ -11171,7 +11360,7 @@
 	)
 	(symbol
 		(lib_id "power:VBUS")
-		(at 120.65 181.61 0)
+		(at 116.84 181.61 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -11179,7 +11368,7 @@
 		(dnp no)
 		(uuid "ec3a03a6-bb13-40fb-a925-b5dc1d8f04a3")
 		(property "Reference" "#PWR0110"
-			(at 120.65 185.42 0)
+			(at 116.84 185.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11188,7 +11377,7 @@
 			)
 		)
 		(property "Value" "VBUS"
-			(at 120.65 177.8 0)
+			(at 116.84 177.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11196,7 +11385,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 120.65 181.61 0)
+			(at 116.84 181.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11205,7 +11394,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 120.65 181.61 0)
+			(at 116.84 181.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11214,7 +11403,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 120.65 181.61 0)
+			(at 116.84 181.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11229,75 +11418,6 @@
 			(project "reQUAD"
 				(path "/28a4b045-d480-4410-adb7-fa6b33984079"
 					(reference "#PWR0110")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "000_LOCAL:C")
-		(at 146.05 184.15 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "f81eabf1-cdd4-4c2b-9873-e4cf10500eba")
-		(property "Reference" "C1"
-			(at 148.59 184.15 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "220u"
-			(at 148.59 186.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "000_LOCAL:CP_EIA-6032-28"
-			(at 146.05 184.15 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "datasheets/TAJ.pdf"
-			(at 146.05 184.15 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 146.05 184.15 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "3faea07a-18b7-436a-a1c5-f390dde1860f")
-		)
-		(pin "2"
-			(uuid "9a8336d2-0f0e-44e7-91f3-8df839d7375e")
-		)
-		(instances
-			(project "reQUAD"
-				(path "/28a4b045-d480-4410-adb7-fa6b33984079"
-					(reference "C1")
 					(unit 1)
 				)
 			)

@@ -1,11 +1,12 @@
 # reQUAD
 
-![](../../raw/main/reQUAD.jpg)
-![](../../raw/main/PCB/out/reQUAD.f.jpg)
-![](../../raw/main/PCB/out/reQUAD.b.jpg)
-![](../../raw/main/PCB/out/reQUAD.top.jpg)
-![](../../raw/main/PCB/out/reQUAD.bottom.jpg)
-![](../../raw/main/PCB/out/reQUAD.svg)
+![](reQUAD.jpg)
+![](PCB/out/reQUAD.f.jpg)
+![](PCB/out/reQUAD.b.jpg)
+![](PCB/out/reQUAD.top.jpg)
+![](PCB/out/reQUAD.bottom.jpg)
+![](PCB/out/reQUAD.svg)
+![reQUAD.bom.csv](PCB/out/reQUAD.bom.csv)
 
 ## About
 This is a derivative of [QUAD](http://bitchin100.com/wiki/index.php?title=QUAD) by Steve Adolph.
@@ -24,9 +25,11 @@ The pin 1 mark on DA1, BAV756S, is tiny and faint, but there is one, you just ne
 
 ## To Use it
 
+The device disables and replaces the machine's original internal 32k RAM, so copy any files off of the computer before installing the reQUAD. You won't be able to access the internal ram except by removing the reQUAD.
+
 The first time the device is powered up, it will be in a random bank number.
 
-The first thing you should do after install is explicitly switch to bank 1.
+The first thing you should do after install is blindly explicitly switch to bank 1.
 
 In BASIC type `OUT 128,0` \[Enter\],  
 then ignore any messages and immediately press RESET.  
@@ -38,21 +41,22 @@ And then either install 0QUAD or at least create an empty text file named BANK1 
 After that, either 0QUAD or the text file names will let you see which bank you are in at any time, for instance after a power-cycle.
 
 ### Manual Control
-Switch banks by typing `OUT 128,n` in BASIC, where n is the desired bank number from 0 to 3,
+
+To switch banks manually without 0QUAD:  
+In BASIC, type `OUT 128,n`, where n is the desired bank number from 0 to 3,  
+then immediately press RESET on the back of the machine.
 
 `OUT 128,0` switches to bank 1  
 `OUT 128,1` switches to bank 2  
 `OUT 128,2` switches to bank 3  
 `OUT 128,3` switches to bank 4  
 
-Then ignore any error messages or any other screen activity,  
-and immediately press the reset button on the back of the machine.
+The currently executing main rom code has no knowledge that it's entire ram universe has been replaced and all it's current pointers and such are invalid, so the main rom must be restarted IMMEDIATELY after the OUT command.
 
-The OUT command might seem to do nothing, or might generate some error message, or might exit to the main menu, or lock up the machine, or might seem to do almost anything.  
-Ignore all of that. It doesn't matter what the machine does, just always press the reset button once immediately after the OUT command.
+So after the OUT command, ignore the screen no matter what it looks like happened, whether it looks like nothing happened or whether it looks like it crashed in some way, just ignore the screen and just press the RESET button on the back of the machine.
 
-This is only when switching manually this way. 0QUAD performs a managed graceful switch that restarts the main rom itself.
-
+Pressing RESET is only needed when switching manually this way instead of using 0QUAD.  
+0QUAD restarts the main rom itself gracefully.
 
 ### Software Control
 Install [0QUAD](APP/)
@@ -61,6 +65,11 @@ Refer to the docs for the original [QUAD](http://bitchin100.com/wiki/index.php?t
 
 ### Example Installing 0QUAD using dl2 and teeny
 (this will wipe all data)
+
+QUAD.BA must be copied as a binary via TPDD, it can't be copied in ascii format using ordinary text transfer with TELCOM.  
+
+This example will use dl2 on the pc and install TEENY on the 100 and then use both TEENY and dl2 to copy QUAD.BA to the 100.
+You can use any TPDD emulator like LaddieAlpha or a Backpack instead of dl2, and you can use any TPDD client like TS-DOS or DSKMGR instead of TEENY.  
 
 On the pc, install [dl2](https://github.com/bkw777/dl2/)
 
@@ -102,7 +111,7 @@ Install 0QUAD in bank 2 by repeating everything after the OUT command above, inc
 Answer "2" at the "Which bank?" question.  
 Repeat again for banks 3 and 4.
 
-Once 0QUAD is installed in all banks, you can use it to switch from any bank to any other bank, and you don't need to press the reset button after each switch when using 0QUAD to switch.
+Once 0QUAD is installed in all banks, you can use it to switch from any bank to any other bank, and you don't need to press the RESET button after each switch when using 0QUAD to switch.
 
 ## Thanks
 Thanks to Steve Adolph for sharing his original design and allowing this derivative.
