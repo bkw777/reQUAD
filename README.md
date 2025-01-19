@@ -29,20 +29,26 @@ The device disables and replaces the machine's original internal 32k RAM, so cop
 
 The first time the device is powered up, it will be in a random bank number.
 
-The first thing you should do after install is blindly explicitly switch to bank 1.
+The first thing you should do after install is "blindly" switch to each bank,  
+and do a cold-reset in each bank to wipe all banks of any random data.  
+(only cold-reset, not power-cycle. If you power-cycle, the reQUAD may switch to a random bank again.)
 
-In BASIC type `OUT 128,0` \[Enter\],  
-then ignore any messages and immediately press RESET.  
-Only RESET, or CTRL+BREAK+RESET, but NOT power-cycle!  
-Power-cycle will make the bank number unknown and random again.
+In BASIC type `OUT 128,3` \[Enter\], then CTRL+BREAK+RESET.  
+In BASIC type `OUT 128,2` \[Enter\], then CTRL+BREAK+RESET.  
+In BASIC type `OUT 128,1` \[Enter\], then CTRL+BREAK+RESET.  
+In BASIC type `OUT 128,0` \[Enter\], then CTRL+BREAK+RESET.  
 
-And then either install 0QUAD or at least create an empty text file named BANK1 so that you can identify which bank you are in. Then repeat for banks 2, 3, 4.
+Now all 4 banks have been wiped clean of any random data, and you are sitting in bank 1.  
+From now on, don't do CTRL+BREAK+RESET any more, just RESET (unless you actually want to wipe a bank).  
 
-After that, either 0QUAD or the text file names will let you see which bank you are in at any time, for instance after a power-cycle.
+Now there are 3 main options for using the banks from no on.  
+Manual control,  
+BANK.BA,  
+0QUAD
 
 ### Manual Control
 
-To switch banks manually without 0QUAD:  
+To switch banks manually without 0QUAD or BANK.BA:  
 In BASIC, type `OUT 128,n`, where n is the desired bank number from 0 to 3,  
 then immediately press RESET on the back of the machine.
 
@@ -51,14 +57,40 @@ then immediately press RESET on the back of the machine.
 `OUT 128,2` switches to bank 3  
 `OUT 128,3` switches to bank 4  
 
-The currently executing main rom code has no knowledge that it's entire ram universe has been replaced and all it's current pointers and such are invalid, so the main rom must be restarted IMMEDIATELY after the OUT command.
+The cpu has no knowledge that it's entire ram universe has been replaced and all it's current register contents and pointers and such are invalid, so the main rom must be restarted IMMEDIATELY after the OUT command.
 
-So after the OUT command, ignore the screen no matter what it looks like happened, whether it looks like nothing happened or whether it looks like it crashed in some way, just ignore the screen and just press the RESET button on the back of the machine.
+So after the OUT command, ignore the screen and press the RESET button on the back of the machine.
 
-Pressing RESET is only needed when switching manually this way instead of using 0QUAD.  
-0QUAD restarts the main rom itself gracefully.
+Pressing RESET is only needed when switching manually this way instead of using BANK.BA or 0QUAD.  
+BANK.BA and 0QUAD both induce a reset themselves.
 
-### Software Control
+### BANK.BA
+The next-simplest option for controlling the reQUAD is to copy this 4-line BASIC program into each bank,  
+and save it with a name matching the current bank it's in.
+
+First, ensure you are in bank 1:  
+In BASIC, type `OUT128,0` \[Enter\], then press RESET.
+
+Then in BASIC type-in this program:
+```
+1 INPUT"Bank(1-4)";X:IFX<1ORX>4THEN 1
+2 A#=0:B=VARPTR(A#):POKEB,249
+3 POKEB+1,195:POKEB+2,241:POKEB+3,118
+4 CALLB,X-1,30481
+```
+
+Then `SAVE "BANK1"`
+
+Now you know you are in bank1 because it says BANK1.BA in the main menu,  
+and you can BANK1.BA to switch to any other bank.
+
+Repeat for all 4 banks  
+run BANK1.BA, answer "2", you are now in a new empty bank2, type-in the program again, `SAVE "BANK2"`  
+run BANK2.BA, answer "3", type-in, `SAVE "BANK3"`  
+run BANK3.BA, answer "4", type-in, `SAVE "BANK4"`  
+
+### 0QUAD
+
 Install [0QUAD](APP/)
 
 Refer to the docs for the original [QUAD](http://bitchin100.com/wiki/index.php?title=QUAD)
@@ -68,8 +100,8 @@ Refer to the docs for the original [QUAD](http://bitchin100.com/wiki/index.php?t
 
 QUAD.BA must be copied as a binary via TPDD, it can't be copied in ascii format using ordinary text transfer with TELCOM.  
 
-This example will use dl2 on the pc and install TEENY on the 100 and then use both TEENY and dl2 to copy QUAD.BA to the 100.
-You can use any TPDD emulator like LaddieAlpha or a Backpack instead of dl2, and you can use any TPDD client like TS-DOS or DSKMGR instead of TEENY.  
+This example will use dl2 on the pc to bootstrap install TEENY on the 100, and then use TEENY and dl2 to copy QUAD.BA to the 100.
+You can use any other TPDD emulator instead of dl2, like LaddieAlpha or a Backpack, and you can use any TPDD client instead of TEENY, like TS-DOS or DSKMGR.
 
 On the pc, install [dl2](https://github.com/bkw777/dl2/)
 
@@ -95,11 +127,11 @@ Use TEENY to copy QUAD.BA from the pc
 On the pc: Ctrl+C to exit dl2
 
 On the 100: Run QUAD.BA  
-Answer "1" to the "Which bank?" question.  
+Answer "1" to the "Which bank are you in?" question.  
 
 0QUAD is now installed in bank 1, but is invisible.
 
-Type `0QUAD` at the main menu (not in BASIC) to run 0QUAD
+Type `0QUAD` \[Enter\] at the main menu (not in BASIC) to run 0QUAD
 
 Now the top-right corner will show "#1" to show that you are currently in bank 1.  
 Press F1 to pull up the bank-switch menu, then press F2 to switch to bank 2.
