@@ -9001,7 +9001,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "74AHC573PW,118"
+		(property "MPN" "74HC573PW,118"
 			(at 158.75 60.96 0)
 			(effects
 				(font
@@ -9124,7 +9124,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "IC FF D-TYPE DUAL 1BIT SM8"
+		(property "Description" "Flip Flop 2 Element D-Type 1 Bit Positive Edge 8-VFSOP (0.091\", 2.30mm Width)"
 			(at 158.75 95.25 0)
 			(effects
 				(font
@@ -9133,7 +9133,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "SN74LVC2G79DCTR"
+		(property "MPN" "SN74LVC2G79DCUR"
 			(at 158.75 95.25 0)
 			(effects
 				(font
@@ -9220,7 +9220,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "IC FF D-TYPE DUAL 1BIT SM8"
+		(property "Description" "Flip Flop 2 Element D-Type 1 Bit Positive Edge 8-VFSOP (0.091\", 2.30mm Width)"
 			(at 158.75 105.41 0)
 			(effects
 				(font
@@ -9229,7 +9229,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "SN74LVC2G79DCTR"
+		(property "MPN" "SN74LVC2G79DCUR"
 			(at 158.75 105.41 0)
 			(effects
 				(font
@@ -9447,7 +9447,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "IC FF D-TYPE DUAL 1BIT SM8"
+		(property "Description" "Flip Flop 2 Element D-Type 1 Bit Positive Edge 8-VFSOP (0.091\", 2.30mm Width)"
 			(at 101.6 184.15 0)
 			(effects
 				(font
@@ -9456,7 +9456,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "SN74LVC2G79DCTR"
+		(property "MPN" "SN74LVC2G79DCUR"
 			(at 101.6 184.15 0)
 			(effects
 				(font
